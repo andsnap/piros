@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/scientiac/Experiments/gitsync/piros/Cargo.toml
+cargo:rustc-link-search=native=/home/scientiac/Experiments/gitsync/piros/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-631b690f63a18ff6/out
+cargo:rustc-link-lib=static=kernel_bin-piros
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/scientiac/Experiments/gitsync/piros/target/x86-piros/debug/piros
+cargo:rerun-if-changed=build.rs
